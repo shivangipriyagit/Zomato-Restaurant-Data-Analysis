@@ -1,130 +1,84 @@
-# Zomato Restaurant Data Analysis
+# Zomato Restaurant Market & Sentiment Analysis (Hyderabad)
 
-## Overview
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Pandas%20%7C%20NumPy-brightgreen.svg)](https://pandas.pydata.org/)
+[![Visualization](https://img.shields.io/badge/Visualization-Matplotlib-orange.svg)](https://matplotlib.org/)
+[![Presentation](https://img.shields.io/badge/Presentation-PowerPoint%20Deck-navy.svg)](presentation/Zomato%20Project.pptx)
 
-This project presents an exploratory data analysis of a Zomato restaurant dataset consisting of restaurant metadata and customer reviews. The objective is to discover useful business insights by analyzing restaurant pricing, cuisines, customer ratings, and review patterns.
+A comprehensive exploratory data analysis, market saturation mapping, pricing elasticity benchmark, and customer review sentiment intelligence project focused on the **Gachibowli culinary corridor in Hyderabad, India**.
 
-The project demonstrates a complete data analytics workflow using Python, from data cleaning and preprocessing to visualization and insight generation.
+---
 
-## Dataset Information
+## Table of Contents
+- [Executive Overview](#-executive-overview)
+- [Analytical Objectives](#-analytical-objectives)
+- [Dataset Architecture](#-dataset-architecture)
+- [Repository Structure](#-repository-structure)
+- [Technologies Used](#%EF%B8%8F-technologies-used)
+- [Installation & Quickstart](#-installation--quickstart)
+- [Analysis Performed](#-analysis-performed)
+- [Visualizations Gallery](#-visualizations-gallery)
+- [12 Key Business Insights](#-12-key-business--strategic-insights)
+- [Conclusion & Strategic Recommendations](#-conclusion--strategic-recommendations)
+- [Future Scope](#-future-scope)
+- [Author & License](#-author--license)
 
-The project uses two datasets.
+---
 
-### Restaurant Metadata
+## Executive Overview
 
-* Number of restaurants: **105**
-* Features:
+In major tech and financial micro-markets like Gachibowli (Hyderabad), food and beverage businesses operate in a hyper-competitive environment with high operating costs, diverse workforce demographics, and round-the-clock shift schedules.
 
-  * Restaurant Name
-  * Zomato Link
-  * Average Cost
-  * Collections
-  * Cuisines
-  * Timings
+This project delivers an end-to-end data analytics pipeline that cleans heterogeneous restaurant metadata, extracts numerical metrics from multi-label text structures, and performs text mining across **10,000 verified customer reviews** to uncover market opportunities, optimal pricing bands, and operational bottlenecks.
 
-### Restaurant Reviews
+---
 
-* Number of reviews: **10,000**
-* Review information includes customer ratings, review text, reviewer details, review time, and engagement statistics.
+## 🎯 Analytical Objectives
 
-## Objectives
+1. **Quantify Market Saturation:** Identify commoditized culinary segments (Red Oceans) vs. high-margin underserved niches (Blue Oceans).
+2. **Pricing Optimization & Elasticity:** Benchmark *Cost for Two* distributions and analyze relationship with rating performance.
+3. **Operational Hours Assessment:** Evaluate nocturnal dining opportunities across 24/7 IT work schedules.
+4. **Root-Cause Sentiment Mining:** Extract operational defect drivers from 1-star reviews and delight drivers from 5-star reviews via NLP word clouds.
+5. **Formulate Strategic Recommendations:** Deliver actionable, non-generic operational playbooks for restaurateurs and investors.
 
-The objectives of this project are:
+---
 
-* Understand the restaurant dataset.
-* Clean and preprocess the data.
-* Explore restaurant pricing.
-* Analyze cuisine popularity.
-* Study customer review trends.
-* Identify highly rated restaurants.
-* Generate business insights using visualizations.
+## Dataset Architecture
+
+The project leverages two authentic datasets located in the [`data/`](data/) directory:
+
+| Dataset File | Records | Key Columns | Description |
+| :--- | :---: | :--- | :--- |
+| [`Zomato Restaurant names and Metadata.csv`](data/Zomato%20Restaurant%20names%20and%20Metadata.csv) | **105** | `Name`, `Links`, `Cost`, `Collections`, `Cuisines`, `Timings` | Granular restaurant metadata including URLs, cost for two, curated collection tags, multi-label cuisines, and detailed daily operational schedules. |
+| [`Zomato Restaurant reviews.csv`](data/Zomato%20Restaurant%20reviews.csv) | **10,000** | `Restaurant`, `Reviewer`, `Review`, `Rating`, `Metadata`, `Time`, `Pictures` | Multi-dimensional customer feedback records containing star ratings, review text, reviewer credibility metrics, timestamps, and media attachments. |
+
+---
 
 ## Repository Structure
 
 ```text
 zomato-restaurant-analysis/
-│
 ├── data/
-│   ├── Zomato Restaurant names and Metadata.csv
-│   └── Zomato Restaurant reviews.csv
-│
-├── notebooks/
-│   └── zomato_analysis.ipynb
-│
+│   ├── Zomato Restaurant names and Metadata.csv   # Restaurant metadata (105 venues)
+│   └── Zomato Restaurant reviews.csv             # 10,000 Customer reviews & ratings
 ├── images/
-│
+│   ├── rating_distribution.png                   # Rating distribution & mean/median
+│   ├── cost_distribution.png                     # Cost for two histogram & benchmarks
+│   ├── top_cuisines.png                          # Top 10 cuisines & market share
+│   ├── restaurant_collections.png                # Zomato curated collections ranking
+│   ├── restaurant_timings.png                    # Operating hours segmentation pie chart
+│   ├── top_restaurants.png                       # Top 10 highest-rated restaurants (min 50 reviews)
+│   └── wordcloud.png                             # Customer review sentiment WordCloud
+├── notebooks/
+│   └── zomato_analysis.ipynb                     # Production Jupyter Notebook (Sections 1–8)
 ├── presentation/
-│   └── Zomato Project.pptx
-│
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-└── README.md
-```
-
-## Technologies
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Plotly
-* WordCloud
-* Scikit-learn
-* Jupyter Notebook
-
-## Analysis Performed
-
-The notebook covers:
-
-### Data Cleaning
-
-* Missing value analysis
-* Duplicate detection
-* Data type inspection
-* Feature preparation
-
-### Exploratory Data Analysis
-
-* Restaurant cost analysis
-* Cuisine analysis
-* Collection analysis
-* Restaurant timing analysis
-* Review analysis
-* Rating distribution
-* Most reviewed restaurants
-
-### Visualizations
-
-The project includes visualizations such as:
-
-* Rating Distribution
-* Restaurant Cost Distribution
-* Top Cuisines
-* Restaurant Collections
-* Most Expensive Restaurants
-* Most Popular Restaurants
-* Word Cloud of Customer Reviews
-
-## Business Insights
-
-The analysis helps answer business questions including:
-
-* Which cuisines dominate the restaurant market?
-* Which restaurants receive the highest customer engagement?
-* What is the pricing trend among restaurants?
-* What types of restaurants appear most frequently in Zomato collections?
-* Which customer preferences are reflected in reviews?
-
-## Future Scope
-
-Possible extensions include:
-
-* Sentiment Analysis
-* Restaurant Recommendation System
-* Interactive Dashboard
-* Machine Learning Models for Rating Prediction
-
-## Author
-
-This project was developed as part of a data analytics portfolio using Python and Jupyter Notebook.
+│   └── Zomato Project.pptx                       # Executive 8-slide PowerPoint deck
+├── scripts/
+│   ├── run_analysis.py                           # Automated ETL & visual generator
+│   ├── build_presentation.py                     # Automated PPTX deck compiler
+│   └── generate_notebook.py                      # Jupyter notebook builder
+├── .gitignore                                    # Production gitignore rules
+├── LICENSE                                       # MIT Open Source License
+├── README.md                                     # Comprehensive project documentation
+└── requirements.txt                              # Pinned Python dependencies
