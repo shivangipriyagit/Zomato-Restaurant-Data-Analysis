@@ -34,7 +34,7 @@ This project delivers an end-to-end data analytics pipeline that cleans heteroge
 
 ---
 
-## 🎯 Analytical Objectives
+## Analytical Objectives
 
 1. **Quantify Market Saturation:** Identify commoditized culinary segments (Red Oceans) vs. high-margin underserved niches (Blue Oceans).
 2. **Pricing Optimization & Elasticity:** Benchmark *Cost for Two* distributions and analyze relationship with rating performance.
