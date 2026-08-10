@@ -8,6 +8,7 @@
 
 A comprehensive exploratory data analysis, market saturation mapping, pricing elasticity benchmark, and customer review sentiment intelligence project focused on the **Gachibowli culinary corridor in Hyderabad, India**.
 
+https://github.com/shivangipriyagit/Zomato-Restaurant-Data-Analysis/blob/0e09099a856d74e277b24031b07f9abf81e6431f/Zomato%20Resturant%20Name%20and%20Metadata.png
 ---
 
 ## Table of Contents
