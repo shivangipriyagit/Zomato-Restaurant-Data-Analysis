@@ -189,7 +189,7 @@ The project performs the following analyses:
 
 | Customer Rating Distribution | Cost Distribution |
 |------------------------------|-------------------|
-| ![](images/rating_distribution.png) | ![](images/cost_distribution.png) |
+| ![](images/rating_distribution.png) | ![](https://github.com/shivangipriyagit/Zomato-Restaurant-Data-Analysis/blob/6ec79bb1af0f465ed9540623ba4b9fda1c4196dc/cost_distribution.png) |
 
 ---
 
