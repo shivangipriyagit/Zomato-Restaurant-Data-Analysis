@@ -190,7 +190,7 @@ The project performs the following analyses:
 
 | Top Cuisines | Restaurant Collections |
 |---------------|-------------------------|
-| ![](images/top_cuisines.png) | ![](images/restaurant_collections.png) |
+| ![](https://github.com/shivangipriyagit/Zomato-Restaurant-Data-Analysis/blob/83ddc2888f0dd0f284705f61248e3b430840f2e8/top_cuisines.png) | ![](images/restaurant_collections.png) |
 
 ---
 
