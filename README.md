@@ -8,13 +8,6 @@
 
 A comprehensive exploratory data analysis, market saturation mapping, pricing elasticity benchmark, and customer review sentiment intelligence project focused on the **Gachibowli culinary corridor in Hyderabad, India**.
 
----
-# Zomato Restaurant Market & Sentiment Analysis (Hyderabad)
-
-A comprehensive exploratory data analysis, market saturation mapping, pricing elasticity benchmarking, and customer review sentiment intelligence project focused on the **Gachibowli culinary corridor in Hyderabad, India**.
-
----
-
 # Table of Contents
 
 - Executive Overview
