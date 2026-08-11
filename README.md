@@ -97,7 +97,7 @@ zomato-restaurant-analysis/
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 - **Language:** Python 3.10+
 - **Data Processing:** pandas, numpy
@@ -108,7 +108,7 @@ zomato-restaurant-analysis/
 
 ---
 
-# 🚀 Installation & Quickstart
+# Installation & Quickstart
 
 ## 1. Clone Repository
 
