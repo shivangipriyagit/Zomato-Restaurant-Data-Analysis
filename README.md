@@ -198,7 +198,7 @@ The project performs the following analyses:
 
 | Restaurant Timings | Highest Rated Restaurants |
 |-------------------|----------------------------|
-| ![](images/restaurant_timings.png) | ![](images/top_restaurants.png) |
+| ![](https://github.com/shivangipriyagit/Zomato-Restaurant-Data-Analysis/blob/c550327423464f278406ced9d8ecc725b4566c08/restaurant_timings.png) | ![](images/top_restaurants.png) |
 ---
 
 # 12 Key Business & Strategic Insights
